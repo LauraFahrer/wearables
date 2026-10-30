@@ -7,4 +7,4 @@ The specific research topic and clinical application are still being defined and
 
 ## Contribution
 
-The main branch of this repository is protected and should always contain a stable version of the project. To make changes, create a separate branch for each new feature, task, or bug fix. Once the work is completed and tested, submit a Pull Request to merge the changes into main.
+The main branch of this repository is protected and should always contain a stable version of the project. To make changes, create a separate branch for each new feature, task or bug fix. Once the work is completed and tested, submit a Pull Request to merge the changes into main. After a successful merge, please delete your branch if GitHub indicates that it can be safely deleted.
