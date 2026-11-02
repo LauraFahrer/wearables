@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="749" height="552" viewBox="0 0 749 552" style="color-scheme: light dark">
+<defs>
+</defs>
+<metadata id="diagram-manifest" data-schema-version="1.0"><![CDATA[{"groups":[{"color":"#df0b0b","id":"accession","label":"Data Accession"},{"color":"#4403dc","id":"processing","label":"Data Processing"},{"color":"#ff8c00","id":"cv","label":"Model Tuning"},{"color":"#00cafd","id":"train_eval","label":"Model Training and Evaluation"}],"height":552,"match":{"flags":"i","target":"fqProcessName","type":"regex"},"nodes":[{"groups":["accession"],"h":10.0,"id":"online_raw","label":"online_raw","patterns":[],"r":5.0,"region":"accession","rx":5.0,"w":10.0,"x":80.0,"y":120.0},{"groups":["accession"],"h":10.0,"id":"raw","label":"raw","patterns":[],"r":5.0,"region":"accession","rx":5.0,"w":10.0,"x":375.5,"y":120.0},{"groups":["accession"],"h":10.0,"id":"data_download","label":"Data Download","patterns":[],"r":5.0,"region":"accession","rx":5.0,"w":10.0,"x":178.5,"y":120.0},{"groups":["accession"],"h":10.0,"id":"input_validation","label":"Input Validation","patterns":[],"r":5.0,"region":"accession","rx":5.0,"w":10.0,"x":277.0,"y":120.0},{"groups":["processing"],"h":10.0,"id":"raw_2","label":"raw_2","patterns":[],"r":5.0,"region":"processing","rx":5.0,"w":10.0,"x":80.0,"y":270.0},{"groups":["processing"],"h":10.0,"id":"input_validation_2","label":"Input Validation","patterns":[],"r":5.0,"region":"processing","rx":5.0,"w":10.0,"x":178.5,"y":270.0},{"groups":["processing"],"h":10.0,"id":"eda","label":"Exploratory Data Analysis","patterns":[],"r":5.0,"region":"processing","rx":5.0,"w":10.0,"x":277.0,"y":270.0},{"groups":["processing"],"h":10.0,"id":"data_processing","label":"Data Processing","patterns":[],"r":5.0,"region":"processing","rx":5.0,"w":10.0,"x":375.5,"y":270.0},{"groups":["processing"],"h":10.0,"id":"splitting","label":"Dataset Splitting","patterns":[],"r":5.0,"region":"processing","rx":5.0,"w":10.0,"x":474.0,"y":270.0},{"groups":["processing"],"h":10.0,"id":"train_set","label":"train_set","patterns":[],"r":5.0,"region":"processing","rx":5.0,"w":10.0,"x":631.6,"y":270.0},{"groups":["processing"],"h":10.0,"id":"test_set","label":"test_set","patterns":[],"r":5.0,"region":"processing","rx":5.0,"w":10.0,"x":631.6,"y":328.4}],"regions":[{"id":"accession","label":"Data Accession"},{"id":"processing","label":"Data Processing"}],"title":"Wearables","version":"1.0","width":749}]]></metadata>
+<style>.nf-metro-bg { fill: var(--nfm-map-bg, light-dark(#f5f5f5, #2b2b2b)); }
+.nf-metro-title { fill: var(--nfm-map-title-color, light-dark(#111111, #ffffff)); }
+.nf-metro-station-label { fill: var(--nfm-map-label-color, light-dark(#333333, #e0e0e0)); }
+.nf-metro-section-box { fill: var(--nfm-map-section-fill, light-dark(#ededed, #373737)); stroke: var(--nfm-map-section-stroke, light-dark(#e6e6e6, #595959)); }
+.nf-metro-section-label { fill: var(--nfm-map-section-label-color, light-dark(#666666, #c8c8c8)); }
+.nf-metro-group-label { fill: var(--nfm-map-section-label-color, light-dark(#666666, #c8c8c8)); }
+.nf-metro-group-underline { stroke: var(--nfm-map-section-label-color, light-dark(#666666, #c8c8c8)); }
+.nf-metro-legend-bg { fill: var(--nfm-map-legend-bg, light-dark(rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.3))); }
+.nf-metro-legend-text { fill: var(--nfm-map-legend-text-color, light-dark(#333333, #e0e0e0)); }
+.nf-metro-marker-stroke { stroke: var(--nfm-map-marker-stroke, light-dark(#333333, #f0f0f0)); }
+.nf-metro-label-halo { fill: var(--nfm-map-bg, light-dark(#f5f5f5, #2b2b2b)); stroke: var(--nfm-map-bg, light-dark(#f5f5f5, #2b2b2b)); }</style>
+<rect x="0" y="0" width="749" height="552" fill="#2b2b2b" class="nf-metro-bg" />
+<text x="60.0" y="30.0" font-size="24.0" fill="#ffffff" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" class="nf-metro-title">Wearables</text>
+<rect x="22.0" y="70.0" width="411.5" height="100.0" rx="8" ry="8" fill="#373737" stroke="#595959" stroke-width="1.0" class="nf-metro-section-box" data-section-id="accession" data-section-lines="accession" />
+<circle cx="33.0" cy="55.0" r="11" fill="#333333" class="nf-metro-section-num-circle" data-section-id="accession" />
+<text x="33.0" y="55.0" font-size="12" fill="#ffffff" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dy="0.3em" data-section-id="accession">1</text>
+<text x="49.0" y="55.0" font-size="16.0" fill="#c8c8c8" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" dy="0.3em" class="nf-metro-section-label" data-section-id="accession">Data Accession</text>
+<rect x="22.0" y="220.0" width="667.6" height="158.4" rx="8" ry="8" fill="#373737" stroke="#595959" stroke-width="1.0" class="nf-metro-section-box" data-section-id="processing" data-section-lines="processing" />
+<circle cx="33.0" cy="205.0" r="11" fill="#333333" class="nf-metro-section-num-circle" data-section-id="processing" />
+<text x="33.0" y="205.0" font-size="12" fill="#ffffff" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dy="0.3em" data-section-id="processing">2</text>
+<text x="49.0" y="205.0" font-size="16.0" fill="#c8c8c8" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" dy="0.3em" class="nf-metro-section-label" data-section-id="processing">Data Processing</text>
+<path d="M80.0,270.0 L178.5,270.0" stroke="#4403dc" stroke-width="3.0" stroke-linecap="round" class="metro-line-processing" data-line-id="processing" />
+<path d="M178.5,270.0 L277.0,270.0" stroke="#4403dc" stroke-width="3.0" stroke-linecap="round" class="metro-line-processing" data-line-id="processing" />
+<path d="M277.0,270.0 L375.5,270.0" stroke="#4403dc" stroke-width="3.0" stroke-linecap="round" class="metro-line-processing" data-line-id="processing" />
+<path d="M375.5,270.0 L474.0,270.0" stroke="#4403dc" stroke-width="3.0" stroke-linecap="round" class="metro-line-processing" data-line-id="processing" />
+<path d="M474.0,270.0 L631.6,270.0" stroke="#4403dc" stroke-width="3.0" stroke-linecap="round" class="metro-line-processing" data-line-id="processing" />
+<path d="M474.0,270.0 L540.5,270.0 Q550.5,270.0,555.0693498139703,278.89500097119554 L575.9306501860297,319.50499902880443 Q580.5,328.4,590.5,328.4 L631.6,328.4" stroke="#4403dc" stroke-width="3.0" fill="none" stroke-linecap="round" stroke-linejoin="round" class="metro-line-processing" data-line-id="processing" />
+<path d="M80.0,120.0 L178.5,120.0" stroke="#df0b0b" stroke-width="3.0" stroke-linecap="round" class="metro-line-accession" data-line-id="accession" />
+<path d="M178.5,120.0 L277.0,120.0" stroke="#df0b0b" stroke-width="3.0" stroke-linecap="round" class="metro-line-accession" data-line-id="accession" />
+<path d="M277.0,120.0 L375.5,120.0" stroke="#df0b0b" stroke-width="3.0" stroke-linecap="round" class="metro-line-accession" data-line-id="accession" />
+<g class="nf-metro-station-group" data-node-id="online_raw" data-node-cx="80.0" data-node-cy="120.0" data-node-r="5.0" data-node-groups="accession" data-node-region="accession" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="75.0" y="115.0" width="10.0" height="10.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="online_raw" data-station-lines="accession" data-station-label="online_raw" data-section-id="accession" data-section-name="Data Accession" />
+<g data-station-id="online_raw">
+<path d="M38.8,99.8 L56.8,99.8 L64.8,107.8 L64.8,129.8 Q64.8,131.8,62.8,131.8 L38.8,131.8 Q36.8,131.8,36.8,129.8 L36.8,101.8 Q36.8,99.8,38.8,99.8 Z" fill="#ffffff" stroke="#333333" stroke-width="1.5" stroke-linejoin="round" />
+<path d="M56.8,99.8 L56.8,107.8 L64.8,107.8 Z" fill="#333333" opacity="0.15" stroke="none" />
+<path d="M56.8,99.8 L56.8,107.8 L64.8,107.8" fill="none" stroke="#333333" stroke-width="0.8999999999999999" />
+<path d="M43.0,104.0 L61.0,104.0 L69.0,112.0 L69.0,134.0 Q69.0,136.0,67.0,136.0 L43.0,136.0 Q41.0,136.0,41.0,134.0 L41.0,106.0 Q41.0,104.0,43.0,104.0 Z" fill="#ffffff" stroke="#333333" stroke-width="1.5" stroke-linejoin="round" />
+<path d="M61.0,104.0 L61.0,112.0 L69.0,112.0 Z" fill="#333333" opacity="0.15" stroke="none" />
+<path d="M61.0,104.0 L61.0,112.0 L69.0,112.0" fill="none" stroke="#333333" stroke-width="0.8999999999999999" />
+<text x="55.0" y="121.2" font-size="7.5" fill="#000000" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dy="0.3em">csv</text>
+<text x="55.0" y="140.0" font-size="7.8" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="hanging" class="nf-metro-station-label">Data Base</text>
+</g>
+</g>
+<g class="nf-metro-station-group" data-node-id="raw" data-node-cx="375.5" data-node-cy="120.0" data-node-r="5.0" data-node-groups="accession" data-node-region="accession" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="370.5" y="115.0" width="10.0" height="10.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="raw" data-station-lines="accession" data-station-label="raw" data-section-id="accession" data-section-name="Data Accession" />
+<g data-station-id="raw">
+<path d="M388.5,104.0 L406.5,104.0 L414.5,112.0 L414.5,134.0 Q414.5,136.0,412.5,136.0 L388.5,136.0 Q386.5,136.0,386.5,134.0 L386.5,106.0 Q386.5,104.0,388.5,104.0 Z" fill="#ffffff" stroke="#333333" stroke-width="1.5" stroke-linejoin="round" />
+<path d="M406.5,104.0 L406.5,112.0 L414.5,112.0 Z" fill="#333333" opacity="0.15" stroke="none" />
+<path d="M406.5,104.0 L406.5,112.0 L414.5,112.0" fill="none" stroke="#333333" stroke-width="0.8999999999999999" />
+<text x="400.5" y="121.2" font-size="7.5" fill="#000000" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dy="0.3em">csv</text>
+<text x="400.5" y="140.0" font-size="7.8" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="hanging" class="nf-metro-station-label">Raw Data</text>
+</g>
+</g>
+<g class="nf-metro-station-group" data-node-id="data_download" data-node-cx="178.5" data-node-cy="120.0" data-node-r="5.0" data-node-groups="accession" data-node-region="accession" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="173.5" y="115.0" width="10.0" height="10.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="data_download" data-station-lines="accession" data-station-label="Data Download" data-section-id="accession" data-section-name="Data Accession" />
+</g>
+<g class="nf-metro-station-group" data-node-id="input_validation" data-node-cx="277.0" data-node-cy="120.0" data-node-r="5.0" data-node-groups="accession" data-node-region="accession" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="272.0" y="115.0" width="10.0" height="10.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="input_validation" data-station-lines="accession" data-station-label="Input Validation" data-section-id="accession" data-section-name="Data Accession" />
+</g>
+<g class="nf-metro-station-group" data-node-id="raw_2" data-node-cx="80.0" data-node-cy="270.0" data-node-r="5.0" data-node-groups="processing" data-node-region="processing" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="75.0" y="265.0" width="10.0" height="10.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="raw_2" data-station-lines="processing" data-station-label="raw_2" data-section-id="processing" data-section-name="Data Processing" />
+<g data-station-id="raw_2">
+<path d="M43.0,254.0 L61.0,254.0 L69.0,262.0 L69.0,284.0 Q69.0,286.0,67.0,286.0 L43.0,286.0 Q41.0,286.0,41.0,284.0 L41.0,256.0 Q41.0,254.0,43.0,254.0 Z" fill="#ffffff" stroke="#333333" stroke-width="1.5" stroke-linejoin="round" />
+<path d="M61.0,254.0 L61.0,262.0 L69.0,262.0 Z" fill="#333333" opacity="0.15" stroke="none" />
+<path d="M61.0,254.0 L61.0,262.0 L69.0,262.0" fill="none" stroke="#333333" stroke-width="0.8999999999999999" />
+<text x="55.0" y="271.2" font-size="7.5" fill="#000000" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dy="0.3em">csv</text>
+<text x="55.0" y="290.0" font-size="7.8" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="hanging" class="nf-metro-station-label">Raw Data</text>
+</g>
+</g>
+<g class="nf-metro-station-group" data-node-id="input_validation_2" data-node-cx="178.5" data-node-cy="270.0" data-node-r="5.0" data-node-groups="processing" data-node-region="processing" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="173.5" y="265.0" width="10.0" height="10.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="input_validation_2" data-station-lines="processing" data-station-label="Input Validation" data-section-id="processing" data-section-name="Data Processing" />
+</g>
+<g class="nf-metro-station-group" data-node-id="eda" data-node-cx="277.0" data-node-cy="270.0" data-node-r="5.0" data-node-groups="processing" data-node-region="processing" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="272.0" y="265.0" width="10.0" height="10.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="eda" data-station-lines="processing" data-station-label="Exploratory Data Analysis" data-section-id="processing" data-section-name="Data Processing" />
+</g>
+<g class="nf-metro-station-group" data-node-id="data_processing" data-node-cx="375.5" data-node-cy="270.0" data-node-r="5.0" data-node-groups="processing" data-node-region="processing" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="370.5" y="265.0" width="10.0" height="10.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="data_processing" data-station-lines="processing" data-station-label="Data Processing" data-section-id="processing" data-section-name="Data Processing" />
+</g>
+<g class="nf-metro-station-group" data-node-id="splitting" data-node-cx="474.0" data-node-cy="270.0" data-node-r="5.0" data-node-groups="processing" data-node-region="processing" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="469.0" y="265.0" width="10.0" height="10.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="splitting" data-station-lines="processing" data-station-label="Dataset Splitting" data-section-id="processing" data-section-name="Data Processing" />
+</g>
+<g class="nf-metro-station-group" data-node-id="train_set" data-node-cx="631.6" data-node-cy="270.0" data-node-r="5.0" data-node-groups="processing" data-node-region="processing" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="626.6" y="265.0" width="10.0" height="10.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="train_set" data-station-lines="processing" data-station-label="train_set" data-section-id="processing" data-section-name="Data Processing" />
+<g data-station-id="train_set">
+<path d="M644.6,254.0 L662.6,254.0 L670.6,262.0 L670.6,284.0 Q670.6,286.0,668.6,286.0 L644.6,286.0 Q642.6,286.0,642.6,284.0 L642.6,256.0 Q642.6,254.0,644.6,254.0 Z" fill="#ffffff" stroke="#333333" stroke-width="1.5" stroke-linejoin="round" />
+<path d="M662.6,254.0 L662.6,262.0 L670.6,262.0 Z" fill="#333333" opacity="0.15" stroke="none" />
+<path d="M662.6,254.0 L662.6,262.0 L670.6,262.0" fill="none" stroke="#333333" stroke-width="0.8999999999999999" />
+<text x="656.6" y="271.2" font-size="7.5" fill="#000000" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dy="0.3em">csv</text>
+<text x="656.6" y="290.0" font-size="7.8" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="hanging" class="nf-metro-station-label">Train Set</text>
+</g>
+</g>
+<g class="nf-metro-station-group" data-node-id="test_set" data-node-cx="631.6" data-node-cy="328.4" data-node-r="5.0" data-node-groups="processing" data-node-region="processing" data-node-w="10.0" data-node-h="10.0" data-node-rx="5.0">
+<rect x="626.6" y="323.4" width="10.0" height="10.0" rx="5.0" ry="5.0" fill="#ffffff" stroke="#333333" stroke-width="1.5" class="nf-metro-station" data-station-id="test_set" data-station-lines="processing" data-station-label="test_set" data-section-id="processing" data-section-name="Data Processing" />
+<g data-station-id="test_set">
+<path d="M644.6,312.4 L662.6,312.4 L670.6,320.4 L670.6,342.4 Q670.6,344.4,668.6,344.4 L644.6,344.4 Q642.6,344.4,642.6,342.4 L642.6,314.4 Q642.6,312.4,644.6,312.4 Z" fill="#ffffff" stroke="#333333" stroke-width="1.5" stroke-linejoin="round" />
+<path d="M662.6,312.4 L662.6,320.4 L670.6,320.4 Z" fill="#333333" opacity="0.15" stroke="none" />
+<path d="M662.6,312.4 L662.6,320.4 L670.6,320.4" fill="none" stroke="#333333" stroke-width="0.8999999999999999" />
+<text x="656.6" y="329.59999999999997" font-size="7.5" fill="#000000" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dy="0.3em">csv</text>
+<text x="656.6" y="348.4" font-size="7.8" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="hanging" class="nf-metro-station-label">Test Set</text>
+</g>
+</g>
+<text x="178.5" y="106.0" font-size="13.0" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="3.0" stroke-linejoin="round" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" aria-hidden="true" class="nf-metro-label-halo" text-anchor="middle" dominant-baseline="auto">Data Download</text>
+<text x="178.5" y="106.0" font-size="13.0" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="auto" data-station-id="data_download" class="nf-metro-station-label">Data Download</text>
+<text x="178.5" y="256.0" font-size="13.0" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="3.0" stroke-linejoin="round" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" aria-hidden="true" class="nf-metro-label-halo" text-anchor="middle" dominant-baseline="auto">Input Validation</text>
+<text x="178.5" y="256.0" font-size="13.0" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="auto" data-station-id="input_validation_2" class="nf-metro-station-label">Input Validation</text>
+<text x="277.0" y="131.0" font-size="13.0" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="3.0" stroke-linejoin="round" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" aria-hidden="true" class="nf-metro-label-halo" text-anchor="middle" dominant-baseline="hanging">Input Validation</text>
+<text x="277.0" y="131.0" font-size="13.0" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="hanging" data-station-id="input_validation" class="nf-metro-station-label">Input Validation</text>
+<text x="277.0" y="281.0" font-size="13.0" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="3.0" stroke-linejoin="round" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" aria-hidden="true" class="nf-metro-label-halo" text-anchor="middle" dominant-baseline="hanging">Exploratory Data Analysis</text>
+<text x="277.0" y="281.0" font-size="13.0" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="hanging" data-station-id="eda" class="nf-metro-station-label">Exploratory Data Analysis</text>
+<text x="375.5" y="256.0" font-size="13.0" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="3.0" stroke-linejoin="round" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" aria-hidden="true" class="nf-metro-label-halo" text-anchor="middle" dominant-baseline="auto">Data Processing</text>
+<text x="375.5" y="256.0" font-size="13.0" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="auto" data-station-id="data_processing" class="nf-metro-station-label">Data Processing</text>
+<text x="474.0" y="281.0" font-size="13.0" fill="#2b2b2b" stroke="#2b2b2b" stroke-width="3.0" stroke-linejoin="round" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" aria-hidden="true" class="nf-metro-label-halo" text-anchor="middle" dominant-baseline="hanging">Dataset Splitting</text>
+<text x="474.0" y="281.0" font-size="13.0" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="bold" text-anchor="middle" dominant-baseline="hanging" data-station-id="splitting" class="nf-metro-station-label">Dataset Splitting</text>
+<rect x="22.0" y="408.4" width="283.30000000000007" height="120.0" rx="6" ry="6" fill="rgba(0, 0, 0, 0.3)" class="nf-metro-legend-bg" />
+<path d="M34.0,432.4 L58.0,432.4" stroke="#df0b0b" stroke-width="3.0" stroke-linecap="round" />
+<text x="70.0" y="432.4" font-size="14.0" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" dy="0.3em" class="nf-metro-legend-text">Data Accession</text>
+<path d="M34.0,456.4 L58.0,456.4" stroke="#4403dc" stroke-width="3.0" stroke-linecap="round" />
+<text x="70.0" y="456.4" font-size="14.0" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" dy="0.3em" class="nf-metro-legend-text">Data Processing</text>
+<path d="M34.0,480.4 L58.0,480.4" stroke="#ff8c00" stroke-width="3.0" stroke-linecap="round" />
+<text x="70.0" y="480.4" font-size="14.0" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" dy="0.3em" class="nf-metro-legend-text">Model Tuning</text>
+<path d="M34.0,504.4 L58.0,504.4" stroke="#00cafd" stroke-width="3.0" stroke-linecap="round" />
+<text x="70.0" y="504.4" font-size="14.0" fill="#e0e0e0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" dy="0.3em" class="nf-metro-legend-text">Model Training and Evaluation</text>
+<text x="719.0" y="544.0" font-size="8" fill="rgba(150, 150, 150, 0.6)" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="end">created with nf-metro v2.1.0</text>
+</svg>

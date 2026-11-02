@@ -1,0 +1,60 @@
+%%metro title: Wearables
+%%metro style: nfcore
+
+%%metro line: accession | Data Accession | #df0b0b
+%%metro line: processing | Data Processing | #4403dc
+%%metro line: cv | Model Tuning | #ff8c00
+%%metro line: train_eval | Model Training and Evaluation | #00cafd
+
+%%metro files: online_raw | csv | Data Base
+%%metro file: raw | csv | Raw Data
+%%metro file: raw_2 | csv | Raw Data
+%%metro file: test_set | csv | Test Set
+%%metro file: train_set | csv | Train Set
+
+%%metro grid: accession | 0,0
+%%metro grid: processing | 0,1
+
+graph LR
+
+    subgraph accession [Data Accession]
+
+        %% 2. Data Accession Workflow
+
+        online_raw[ ]
+        raw[ ]
+
+        data_download[Data Download]
+        input_validation[Input Validation]
+
+        online_raw -->|accession| data_download
+        data_download -->|accession| input_validation
+        input_validation -->|accession| raw
+    
+    end
+
+
+    subgraph processing [Data Processing]
+
+        %% 1. Data Processing Workflow
+
+        raw_2[ ]
+
+        input_validation_2[Input Validation]
+        eda[Exploratory Data Analysis]
+        data_processing[Data Processing]
+        splitting[Dataset Splitting]
+
+        raw_2 -->|processing| input_validation_2
+        input_validation_2 -->|processing| eda
+        eda -->|processing| data_processing
+        data_processing -->|processing| splitting
+        splitting -->|processing| train_set
+        splitting -->|processing| test_set
+
+    end
+
+
+
+
+
