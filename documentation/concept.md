@@ -61,7 +61,7 @@
 - model training:
     - (nested) cross-validation for model selection (and hyperparameter tuning)
     - final model training on whole train set
-    - froze model parameters
+    - freeze model parameters
 - interpretablility: feature importance, dimensionality reduction, ...
 - interpretable output
 
