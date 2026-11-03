@@ -16,3 +16,32 @@ https://openesmdata.org/datasets/
 ## Literature
 
 https://link.springer.com/book/10.1007/978-3-031-39355-6
+
+## Prerequisities
+
+- Conda
+- Nextflow
+- Docker
+
+## Quick Start
+
+To run the stub-tests with Docker:
+
+    nextflow run main.nf --workflow <WORKFLOW> -profile docker -stub-run
+
+(not working currently):
+
+Run a workflow with the included test-profile dataset with Docker:
+
+    nextflow run main.nf --workflow <WORKFLOW> -profile test, docker
+
+To download or analyze a specific dataset with Docker:
+
+    nextflow run main.nf --workflow <WORKFLOW> --dataset <DATASET> -profile docker
+
+## Parameters
+
+| Parameter | Default | Options | Purpose|
+| --- | --- | --- | ---|
+| `--workflow` | required | `data_accession` `data_processing` `...` | Workflow selection |
+| `--dataset` | `test` | - | Dataset identifier |

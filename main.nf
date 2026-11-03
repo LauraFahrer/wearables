@@ -1,37 +1,43 @@
-if (params.workflow == 'data_accession') {
+include {INPUT_VALIDATION}   from './modules/input_validation'
+include {EDA}                from './modules/eda'
+include {PROCESSING_DATA}    from './modules/processing_data'
+include {SPLITTING_DATA}     from './modules/splitting_data'
 
-    workflow DATA_ACCESSION {
-        // Module für data_accession
+workflow {
+
+    if (params.workflow == 'data_accession') {
+
+        // to be defined
+
+    } else if (params.workflow == 'data_processing') {
+
+        INPUT_VALIDATION(
+            params.dataset
+        )
+
+        EDA(
+            INPUT_VALIDATION.out.data,
+            INPUT_VALIDATION.out.metadata
+        )
+
+        PROCESSING_DATA(
+            INPUT_VALIDATION.out.data,
+            INPUT_VALIDATION.out.metadata
+        )
+
+        SPLITTING_DATA(
+            PROCESSING_DATA.out.processed_data
+        )
+
+    } else if (
+        params.workflow != 'data_accession' &&
+        params.workflow != 'data_processing'
+        ) {
+        
+        error"""
+        Unknown workflow: ${params.workflow}.
+        Available workflows: data_accession, data_processing
+        """
     }
 
-    DATA_ACCESSION()
-
-} else if (params.workflow == 'data_processing') {
-
-    workflow DATA_PROCESSING {
-        // Module für data_processing
-    }
-
-    DATA_PROCESSING()
-
-} else if (params.workflow == 'model_tuning') {
-
-
-    workflow MODEL_TUNING {
-        // Module für model_tuning
-    }
-
-    MODEL_TUNING()
-
-} else if (params.workflow == 'model_evaluation') {
-
-    workflow MODEL_EVALUATION {
-        // Module für model_evaluation
-    }
-
-    MODEL_EVALUATION()
-
-} else {
-    
-    error "Unknown workflow: ${params.workflow}. Available workflows: data_accession, data_processing"
 }
