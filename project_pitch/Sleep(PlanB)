@@ -1,0 +1,29 @@
+## Plan B: Predicting sleep onset with a consumer EEG headband
+
+**Problem**
+If all our Datasets are too small, this could be an option?
+I am not sure about the clinical relevance, also its a commercial wearable -> health participants.
+Sleep onset latency is a key measure in insomnia, but people often misjudge it, and objective measurement needs a sleep lab night.
+
+**Research question**
+Can 4-channel EEG from a consumer headband (Muse), recorded at home, predict the time until sleep onset (first N2 epoch)? Do interpretable spectral features perform as well as a deep learning model?
+
+**Data**
+- Muse Sleep-Onset EEG (NEMAR nm000287): 540 at-home recordings from 203 participants, ~157 hours
+- Public, CC BY-NC-SA 4.0 (non-commercial use with attribution)
+- Predefined train/test split and sleep-onset labels available
+
+**Methods**
+- 5 s windows; band power features (alpha, theta, spindle band) and their trends
+- Gradient boosting on features vs. EEGNet on raw signals
+- Validation on unseen participants
+
+**Evaluation & explainability**
+Binned MAE in seconds (challenge metric). Alpha decrease and theta increase are the criteria sleep specialists use, so feature importance can be checked against clinical scoring.
+
+**Why Plan B**
+Data is ready and large, but participants are probably mostly healthy, so the clinical link to insomnia has to be argued.
+
+**Links**
+https://nemar.org/dataset/nm000287
+https://neural-interfaces26.github.io/tracks.html
