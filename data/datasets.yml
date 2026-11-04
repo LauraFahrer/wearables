@@ -1,2 +1,6 @@
-- param: test
-  id: "0001_fried"
+datasets:
+  test:
+    url: ""
+    filename: "Sleep_health_and_lifestyle_dataset.tsv"
+    description: "Sleep health and lifestyle dataset"
+    version: "1.0"
