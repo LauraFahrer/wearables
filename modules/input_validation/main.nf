@@ -3,24 +3,26 @@ process INPUT_VALIDATION {
     container 'python:3.12-slim'
 
     input:
-    val dataset
+    path dataset
+    path checksum
 
     output:
-    path "*.tsv", emit: data
-    path "*.json", emit: metadata
+    path "validation.success", emit: success
 
     script:
     """
 
-    // python script here
+    python ${projectDir}/bin/input_validation.py \
+        --input ${dataset} \
+        --checksum ${checksum} \
+
+    touch validation.success
 
     """
 
     stub:
     """
-
-    touch data.tsv
-    echo '{}' > metadata.json
+    echo "Input validation successful."
 
     """
 }
