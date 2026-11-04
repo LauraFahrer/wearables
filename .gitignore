@@ -1,4 +1,4 @@
-#Nextflow
+# Nextflow
 .nextflow
 work
 results/
@@ -7,3 +7,12 @@ results/
 # Python
 __pycache__/
 *.py[cod]
+
+# Data
+data/
+metadata/
+
+# Testdata
+test_splitting.nf
+test_checksum.nf
+test_validation.nf

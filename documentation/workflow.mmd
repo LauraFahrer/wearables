@@ -25,11 +25,11 @@ graph LR
         raw[ ]
 
         data_download[Data Download]
-        input_validation[Input Validation]
+        checksum_computation[Checksum Computation]
 
         online_raw -->|accession| data_download
-        data_download -->|accession| input_validation
-        input_validation -->|accession| raw
+        data_download -->|accession| checksum_computation
+        checksum_computation -->|accession| raw
     
     end
 

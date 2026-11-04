@@ -41,7 +41,9 @@ To download or analyze a specific dataset with Docker:
 
 ## Parameters
 
-| Parameter | Default | Options | Purpose|
+| Parameter | Default | Workflow | Purpose|
 | --- | --- | --- | ---|
 | `--workflow` | required | `data_accession` `data_processing` `...` | Workflow selection |
-| `--dataset` | `test` | - | Dataset identifier |
+| `--dataset` | `test` | `data_processing` `...` | Dataset identifier |
+| `--test-size` | 0.2 | `data_processing` | Size of test set |
+| `--seed` | 42 | `data_processing` | Seed value |
