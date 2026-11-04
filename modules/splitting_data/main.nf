@@ -1,18 +1,25 @@
 process SPLITTING_DATA {
 
+    publishDir "${projectDir}/results/data_processing/splitted_data", mode: 'copy'
+
     container 'python:3.12-slim'
 
     input:
     path processed_data
+    val test_size
+    val seed
 
     output:
-    path "*.tsv", emit: train_data
-    path "*.tsv", emit: test_data
+    path "train_data.tsv", emit: train_data
+    path "test_data.tsv", emit: test_data
 
     script:
     """
 
-    // python script here
+    python ${projectDir}/bin/splitting_data.py \
+        ${processed_data} \
+        --test-size ${test_size} \
+        --seed ${seed}
 
     """
 

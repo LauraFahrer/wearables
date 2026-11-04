@@ -26,7 +26,9 @@ workflow {
         )
 
         SPLITTING_DATA(
-            PROCESSING_DATA.out.processed_data
+            PROCESSING_DATA.out.processed_data,
+            params.test_size,
+            params.seed
         )
 
     } else if (
