@@ -7,7 +7,15 @@ workflow {
 
     if (params.workflow == 'data_accession') {
 
-        // to be defined
+        DATA_DOWNLOAD(
+            params.dataset,
+            file(params.dataset_config)     // path to datasets.yml -> does this work?
+        )
+
+        CHECKSUM_CALCULATION(
+            DATA_DOWNLOAD.out.raw_data,
+            params.dataset
+        )
 
     } else if (params.workflow == 'data_processing') {
 
