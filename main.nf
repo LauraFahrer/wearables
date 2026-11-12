@@ -1,4 +1,3 @@
-include {DATA_DOWNLOAD}          from './modules/data_download'
 include {CHECKSUM_CALCULATION}   from './modules/checksum_calculation'
 
 include {INPUT_VALIDATION}       from './modules/input_validation'
@@ -10,27 +9,22 @@ include {SPLITTING_DATA}         from './modules/splitting_data'
 
 workflow {
 
-    if (params.workflow == 'data_accession') {
-
-        DATA_DOWNLOAD(
-            params.dataset,
-            file(params.dataset_config)     // path to datasets.yml -> does this work?
-        )
+    if (params.workflow == 'compute_checksum') {
 
         CHECKSUM_CALCULATION(
-            DATA_DOWNLOAD.out.raw_data,
-            params.dataset
+            file(params.dataset),
+            params.dataset_id
         )
 
     } else if (params.workflow == 'eda') {
 
         INPUT_VALIDATION(
-            file(params.dataset_file),
-            file(params.checksum_file)
+            file(params.dataset),
+            file(params.metadata)
         )
 
         EDA(
-            file(params.dataset_file),
+            file(params.dataset),
             INPUT_VALIDATION.out.success
         )
 
@@ -58,14 +52,14 @@ workflow {
         )
 
     } else if (
-        params.workflow != 'data_accession' &&
+        params.workflow != 'compute_checksum' &&
         params.workflow != 'eda' &&
         params.workflow != 'data_processing'
         ) {
         
         error"""
         Unknown workflow: ${params.workflow}.
-        Available workflows: data_accession, eda, data_processing
+        Available workflows: compute_checksum, eda, data_processing
         """
     }
 }

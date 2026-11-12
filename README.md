@@ -25,25 +25,31 @@ https://link.springer.com/book/10.1007/978-3-031-39355-6
 
 ## Quick Start
 
-To run the stub-tests with Docker:
+Whenever a new dataset is downloaded, the compute_checksum workflow must be executed first. This is necessary because the INPUT_VALIDATION process performs a checksum verification at the beginning of every other workflow to ensure data integrity.
 
-    nextflow run main.nf --workflow <WORKFLOW> -profile docker -stub-run
+To register a new dataset, add its dataset ID <DATASET_ID> and filename <DATASET> manually to datasets.yml configuration file as shown below. The compute_checksum workflow generates a metadata file <DATASET_ID.json> in <${projectDir}/data/metadata> containing the corresponding hash value <CHECKSUM>, which must also be added manually to datasets.yml.
 
-(not working currently):
+    datasets:
+        <DATASET_ID>:
+            filename: <DATASET>
+            checksum: <CHECKSUM>
 
-Run a workflow with the included test-profile dataset with Docker:
+The project supports several different workflows. The parameters required for each workflow are listed in Table XY of section 'Parameters'. For information on workflow-specific parameters, please refer to the corresponding workflow documentation in <${projectDir}/documentation/workflows>.
 
-    nextflow run main.nf --workflow <WORKFLOW> -profile test, docker
-
-To download or analyze a specific dataset with Docker:
+A workflow can be started using the default parameters and Docker with the following command:
 
     nextflow run main.nf --workflow <WORKFLOW> --dataset <DATASET> -profile docker
 
+!!CHECK PARAMETER AGAIN!!
+
+To run the stub-tests with Docker use the following command:
+
+    nextflow run main.nf --workflow <WORKFLOW> -profile docker -stub-run
+
 ## Parameters
 
-| Parameter | Default | Workflow | Purpose|
+| Parameter | Default | Purpose|
 | --- | --- | --- | ---|
-| `--workflow` | required | `data_accession` `data_processing` `...` | Workflow selection |
-| `--dataset` | `test` | `data_processing` `...` | Dataset identifier |
-| `--test-size` | 0.2 | `data_processing` | Size of test set |
-| `--seed` | 42 | `data_processing` | Seed value |
+| `--workflow` | required | Workflow selection |
+| `--dataset` | path to 'pupil_adhd_dataset.mat' | Path to dataset |
+| `--dataset_id` | 'pupil_adhd' | `data_processing` | Dataset identifier in dataset.yml |

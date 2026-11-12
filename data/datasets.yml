@@ -1,6 +1,8 @@
 datasets:
-  test:
-    url: ""
-    filename: "Sleep_health_and_lifestyle_dataset.tsv"
-    description: "Sleep health and lifestyle dataset"
-    version: "1.0"
+  sleep:
+    filename: "sleep_dataset.tsv"
+    checksum: "14ba0358dedc3645e668f9c1127cfe801811da6d4e4340b4a629452e6d4495b2"
+
+  pupil_adhd:
+    filename: "pupil_adhd_dataset.mat"
+    ckecksum: "44aa997e37815e7d2a003a4fc4e967f69438a86bdf04650b02f37aaa2a81819b"

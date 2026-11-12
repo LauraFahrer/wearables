@@ -4,7 +4,7 @@ process INPUT_VALIDATION {
 
     input:
     path dataset
-    path checksum
+    path metadata
 
     output:
     path "validation.success", emit: success
@@ -14,7 +14,7 @@ process INPUT_VALIDATION {
 
     python ${projectDir}/bin/input_validation.py \
         --input ${dataset} \
-        --checksum ${checksum} \
+        --checksum ${metadata} \
 
     touch validation.success
 
