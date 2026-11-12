@@ -48,3 +48,30 @@ The workflow includes the following analyses:
 - Linearity
 - Normality
 - Homoscedasticity
+
+## Quick Start
+
+Korrekter Datensatz noch nicht hinterlegt; erfolgreicher Durchlauf mit eigenem Testdatensatz
+
+nextflow run main.nf \
+	--workflow eda \
+	--input data/Sleep_health_and_lifestyle_dataset.tsv \
+	--checksum data/metadata/test_metadata.json \
+	-profile docker \
+	--class_column Sleep_Disorder \
+	--participant_column Person_ID \
+	--positive_label "Sleep Apnea" \
+	--negative_label None
+
+## Parameters
+
+| Parameter | Default | Process | Purpose |
+| --- | --- | --- | --- |
+| `--dataset_file` | path to 'test' | general | Path to dataset |
+| `--class_column` | 'class' | data_distribution, pca | Column with class label |
+| `--participiant_column` | | data_distribution, pca | Column with participant ID |
+| `--positive_label` | | data_distribution | Label of positive class |
+| `--negative_label` | | data_distribution | Label of negative class |
+| `--class_type` | | feature_analysis | Defining regression or classification problem |
+| `--correlation_threshold` | 0.9 | feature_analysis | Correlation threshold for redundant features |
+| `--pca_components` | 3 | pca | Number of computed principle components |

@@ -2,12 +2,9 @@ include {DATA_DOWNLOAD}          from './modules/data_download'
 include {CHECKSUM_CALCULATION}   from './modules/checksum_calculation'
 
 include {INPUT_VALIDATION}       from './modules/input_validation'
-include {QUALITY_INTEGRITY}      from './modules/quality_integrity'
-include {DATA_DISTRIBUTION}      from './modules/data_distribution'
-include {FEATURE_ANALYSIS}       from './modules/feature_analysis'
-include {PCA}                    from './modules/pca'
-
 include {EDA}                    from './modules/eda'
+include {REPORT}              from './modules/report'
+
 include {PROCESSING_DATA}        from './modules/processing_data'
 include {SPLITTING_DATA}         from './modules/splitting_data'
 
@@ -32,24 +29,14 @@ workflow {
             file(params.checksum_file)
         )
 
-        QUALITY_INTEGRITY(
+        EDA(
             file(params.dataset_file),
             INPUT_VALIDATION.out.success
         )
 
-        DATA_DISTRIBUTION(
-            file(params.dataset_file),
-            INPUT_VALIDATION.out.success
-        )
-
-        FEATURE_ANALYSIS(
-            file(params.dataset_file),
-            INPUT_VALIDATION.out.success
-        )
-
-        PCA(
-            file(params.dataset_file),
-            INPUT_VALIDATION.out.success
+        REPORT(
+            EDA.out.success,
+            EDA.out.workflow
         )
 
     } else if (params.workflow == 'data_processing') {
@@ -81,5 +68,4 @@ workflow {
         Available workflows: data_accession, eda, data_processing
         """
     }
-
 }
