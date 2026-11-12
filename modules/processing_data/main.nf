@@ -6,7 +6,7 @@ process PROCESSING_DATA {
     path metadata
 
     output:
-    path "*.tsv", emit: processed_data
+    path "*_processed.tsv", emit: processed_data
     
 
     script:

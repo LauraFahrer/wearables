@@ -22,7 +22,7 @@ process INPUT_VALIDATION {
 
     stub:
     """
-    echo "Input validation successful."
+    touch validation.success
 
     """
 }
