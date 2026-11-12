@@ -9,6 +9,10 @@ The specific research topic and clinical application are still being defined and
 
 The main branch of this repository is protected and should always contain a stable version of the project. To make changes, create a separate branch for each new feature, task or bug fix. Once the work is completed and tested, submit a Pull Request to merge the changes into main. After a successful merge, please delete your branch if GitHub indicates that it can be safely deleted.
 
+## Project Card
+
+https://www.overleaf.com/project/6ae46943efe3bea703a763b6/share#6fa714febdd700efa2c7b9681550de91833eead9a07d220b
+
 ## Datasets
 
 https://openesmdata.org/datasets/
