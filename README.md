@@ -53,7 +53,7 @@ To run the stub-tests with Docker use the following command:
 ## Parameters
 
 | Parameter | Default | Purpose|
-| --- | --- | --- | ---|
+| --- | --- | ---|
 | `--workflow` | required | Workflow selection |
 | `--dataset` | path to 'pupil_adhd_dataset.mat' | Path to dataset |
-| `--dataset_id` | 'pupil_adhd' | `data_processing` | Dataset identifier in dataset.yml |
+| `--dataset_id` | 'pupil_adhd' | Dataset identifier in dataset.yml |
