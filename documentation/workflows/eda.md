@@ -1,14 +1,16 @@
----
-type: workflow
-processes:
-    - input_validation
-    - quality_integrity
-    - data_distribution
-    - feature_analysis
-    - pca
----
-
 # EDA (Exploratory Data Analysis)
+
+## Type
+
+Workflow
+
+## Processes
+
+- input_validation
+- quality_integrity
+- data_distribution
+- feature_analysis
+- pca
 
 ## Description
 

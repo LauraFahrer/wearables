@@ -1,12 +1,14 @@
----
-type: workflow
-processes:
-    - input_validation
-    - processing_data
-    - splitting_data
----
-
 # Data Processing
+
+## Type
+
+Workflow
+
+## Processes
+
+- input_validation
+- processing_data
+- splitting_data
 
 ## Description
 
