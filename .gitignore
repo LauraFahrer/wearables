@@ -16,3 +16,6 @@ metadata/
 test_splitting.nf
 test_checksum.nf
 test_validation.nf
+
+*.mat
+*.parquet
