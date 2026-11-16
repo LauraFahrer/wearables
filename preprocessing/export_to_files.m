@@ -5,9 +5,6 @@ repo     = fileparts(fileparts(mfilename('fullpath')));   % repo root, found fro
 datafile = fullfile(repo, 'data', 'pupil_adhd_data', 'pupil_adhd_dataset.mat');
 outdir   = fullfile(repo, 'data', 'pupil_adhd_data', 'export');
 
-% Test with one session first; afterwards change to: 1:numel(Pupil_data)
-sessions = 1:numel(Pupil_data);
-
 %% Load data (skipped if already in workspace)
 if ~exist('Pupil_data', 'var')
     load(datafile)
@@ -15,6 +12,9 @@ end
 if ~exist(fullfile(outdir, 'raw'), 'dir')
     mkdir(fullfile(outdir, 'raw'));
 end
+
+% Sessions to export (use e.g. 1 for a quick test run)
+sessions = 1:numel(Pupil_data);
 
 %% Export
 meta = table(); trials = table();
