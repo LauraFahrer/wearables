@@ -57,3 +57,29 @@ To run the stub-tests with Docker use the following command:
 | `--workflow` | required | Workflow selection |
 | `--dataset` | path to 'pupil_adhd_dataset.mat' | Path to dataset |
 | `--dataset_id` | 'pupil_adhd' | Dataset identifier in dataset.yml |
+
+## Data export (MATLAB → CSV/Parquet)
+
+The original dataset stores its data as MATLAB tables, which cannot be read directly in Python. A one-off export converts it into formats readable by Python.
+
+**Requirements:** MATLAB R2019a or newer (for `parquetwrite`).
+
+**Steps:**
+1. Download the dataset from Figshare (https://doi.org/10.6084/m9.figshare.7218725.v3) and save it as `data/pupil_adhd_data/pupil_adhd_dataset.mat`.
+2. Run `preprocessing/export_to_files.m` in MATLAB (takes a few minutes).
+
+**Output** in `data/pupil_adhd_data/export/` (not tracked by git):
+
+| File | Content |
+| --- | --- |
+| `meta.csv` | One row per session: session, subject, group, age, WISC scores |
+| `trials.csv` | One row per trial: trial, load, distractor, correct response, performance, reaction time, session |
+| `raw/session_XX.parquet` | Raw samples per session (1000 Hz): time (ms), pupil diameter, gaze x/y, event code |
+
+Expected size: 67 sessions (Ctrl 22, off-ADHD 28, on-ADHD 17), 10,720 trials.
+
+**Notes:**
+- Subjects tested on and off medication share the same `subject` ID.
+- `Perform` is NaN when no response was given.
+- Event codes: 1/2 = memory array, 3–6 = distractor, 7 = probe, 8 = feedback, 9/10 = response.
+- The 8 s pupil epochs in the original `Task_epocs` (z-scored) are not exported; features are computed from the raw data.
