@@ -5,4 +5,4 @@ datasets:
 
   pupil_adhd:
     filename: "pupil_adhd_dataset.mat"
-    ckecksum: "44aa997e37815e7d2a003a4fc4e967f69438a86bdf04650b02f37aaa2a81819b"
+    checksum: "44aa997e37815e7d2a003a4fc4e967f69438a86bdf04650b02f37aaa2a81819b"
