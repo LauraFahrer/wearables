@@ -13,9 +13,9 @@ The main branch of this repository is protected and should always contain a stab
 
 https://www.overleaf.com/project/6ae46943efe3bea703a763b6/share#6fa714febdd700efa2c7b9681550de91833eead9a07d220b
 
-## Datasets
+## Presentation slides
 
-https://openesmdata.org/datasets/
+https://docs.google.com/presentation/d/1p18aammSEKeRquCIfTlISJGsHaxGAgbf4-f7zMlur0c/edit?usp=sharing
 
 ## Literature
 
