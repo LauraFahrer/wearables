@@ -7,6 +7,8 @@ include {REPORT}              from './modules/report'
 include {PROCESSING_DATA}        from './modules/processing_data'
 include {SPLITTING_DATA}         from './modules/splitting_data'
 
+include {MODEL_TUNING}           from './modules/model_tuning'
+
 workflow {
 
     if (params.workflow == 'compute_checksum') {
@@ -51,15 +53,22 @@ workflow {
             params.seed
         )
 
+    } else if (params.workflow == 'model_tuning') {
+
+        MODEL_TUNING(
+            file(params.train_data)
+        )
+
     } else if (
         params.workflow != 'compute_checksum' &&
         params.workflow != 'eda' &&
-        params.workflow != 'data_processing'
+        params.workflow != 'data_processing' &&
+        params.workflow != 'model_tuning'
         ) {
         
         error"""
         Unknown workflow: ${params.workflow}.
-        Available workflows: compute_checksum, eda, data_processing
+        Available workflows: compute_checksum, eda, data_processing, model_tuning
         """
     }
 }
