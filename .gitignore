@@ -21,3 +21,5 @@ test_validation.nf
 
 #slides
 slides/
+# IDE
+.idea/
